@@ -1,0 +1,41 @@
+{
+  "name": "@xt-pagesource/quality-control",
+  "version": "1.0.0",
+  "description": "XT Open Source Mono Repo",
+  "main": "index.js",
+  "author": "Sapient XT",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pagesource/quality-control.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "commit": "npx git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "cz-lerna-changelog": "^2.0.2",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.9",
+    "prettier": "2.0.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  }
+}

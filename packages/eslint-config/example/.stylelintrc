@@ -1,0 +1,3 @@
+{
+  "extends": ["@xt-pagesource/stylelint-config"]
+}

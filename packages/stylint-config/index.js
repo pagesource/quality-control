@@ -15,7 +15,6 @@ const strictRules = {
 
 module.exports = {
   processors: ['stylelint-processor-styled-components'],
-  plugins: ['stylelint-scss'],
   extends: [
     'stylelint-config-recommended',
     'stylelint-config-standard',

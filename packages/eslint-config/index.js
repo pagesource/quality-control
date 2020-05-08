@@ -1,5 +1,5 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
@@ -24,7 +24,6 @@ module.exports = {
     'react-hooks',
     'jsx-a11y',
     'prettier',
-    '@typescript-eslint',
     'extra-rules',
     'compat',
   ],

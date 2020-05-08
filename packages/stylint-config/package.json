@@ -16,7 +16,7 @@
   "files": [
     "index.js"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "stylelint": "^13.3.3",
     "stylelint-scss": "3.17.2",
     "stylelint-config-css-modules": "^2.2.0",

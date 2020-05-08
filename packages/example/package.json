@@ -13,7 +13,7 @@
   },
   "scripts": {
     "lint:css": "stylelint src/*.js",
-    "lint:js": "eslint 'src/*.{js,ts,tsx}'"
+    "lint:js": "eslint src/"
   },
   "repository": {
     "type": "Git Repo",

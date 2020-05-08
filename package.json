@@ -6,9 +6,6 @@
   "author": "Sapient XT",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pagesource/quality-control.git"
@@ -26,7 +23,8 @@
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
     "lint-staged": "^10.0.9",
-    "prettier": "2.0.2"
+    "prettier": "2.0.2",
+    "semantic-release": "^17.0.7"
   },
   "commitlint": {
     "extends": [

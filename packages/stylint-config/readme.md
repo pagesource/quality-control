@@ -1,22 +1,22 @@
-# XT Page Source Eslint Config Package
+# XT Page Source Stylelint Config Package
 
-### Package to unify ESLint configuration and rules across projects. No need to install those packages anymore in your projects and maintain them all separately.
+### Package to unify Stylelint configuration and rules across projects. No need to install those packages anymore in your projects and maintain them all separately.
 
 #### To Install package .
 
 ```
-npm install @xt-pagesource/eslint-config
+npm install @xt-pagesource/stylelint-config
 
 ```
 
 #### Configure
 
-#### Create the file .eslintrc in your app root folder and extend rules. you can also add additional rules as per your desire.
+#### Create the file .stylelintrc in your app root folder and extend rules. you can also add additional rules as per your desire.
 
 ```
 {
 
- "extends":["@xt-pagesource/eslint-config"]
+ "extends":["@xt-pagesource/stylelint-config"]
 
 }
 
@@ -39,17 +39,17 @@ npm install @xt-pagesource/eslint-config
 
 ### Usage
 
-#### Like you will do normally with eslint, this package is nothing else just a wrapper. - For just linting and to see the report, run:
+#### Like you will do normally with stylelint, this package is a wrapper. - For just linting and to see the report, run:
 
 ```
-eslint path/to/folder
+stylelint path/to/folder
 
 ```
 
 For linting and autofix the problems, run:
 
 ```
-eslint --fix path/to/folder
+stylelint --fix path/to/folder
 
 ```
 
@@ -60,8 +60,7 @@ Add in your package.json at the scripts section the two following scripts:
 
 {
     "scripts": {
-    "lint:js": "eslint path/to/folder",
-    "lint:fix": "eslint  --fix path/to/folder"
+
     "lint:css": "stylelint path/to/folder",
     }
 }

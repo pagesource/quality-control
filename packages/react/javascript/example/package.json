@@ -1,0 +1,35 @@
+{
+  "name": "sample-app",
+  "version": "1.0.0",
+  "description": "Sanple app for testing eslint config",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@xt-pagesource/eslint-config-react": "1.0.0",
+    "@xt-pagesource/stylelint-config-react": "1.0.0"
+  },
+  "scripts": {
+    "lint:css": "stylelint src/*.js",
+    "lint:js": "eslint src/"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js}": [
+        "prettier --write"
+      ]
+    }
+  },
+  "repository": {
+    "type": "Git Repo",
+    "url": "https://github.com/pagesource"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Sapient XT",
+  "license": "MIT"
+}

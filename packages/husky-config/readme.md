@@ -11,10 +11,10 @@ npm install @xt-pagesource/husky-config
 
 #### Configure and usage
 
-#### Create the file husky.config.js or .huskyrc.js in your app root folder and extend rules. you can also add additional rules as per your desire.
+#### Create the file husky.config.js or .huskyrc.js in your app root folder.
 
 ```
-module.exports = '@xt-pagesource/husky-config'
+module.exports = require('@xt-pagesource/husky-config');
 
 ```
 
@@ -26,4 +26,3 @@ const huskyConfig= require('@xt-pagesource/husky-config').overrides({
 })
 
 ```
-

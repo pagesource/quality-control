@@ -11,7 +11,7 @@ npm install @xt-pagesource/commitlint-config
 
 #### Configure
 
-#### Create a file commitlint.config.js in your app root folder and extend rules. you can also add additional rules as per your desire.
+#### Create a file commitlintrc.json in your app root folder and extend rules. you can also add additional rules as per your desire.
 
 ```
 {

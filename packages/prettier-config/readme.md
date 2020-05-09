@@ -14,7 +14,7 @@ npm install @xt-pagesource/prettier-config
 #### Create the file prettier.config.js or .prettierrc.js in your app root folder and extend rules. you can also add additional rules as per your desire.
 
 ```
-module.exports = '@xt-pagesource/prettier-config'
+module.exports = require('@xt-pagesource/prettier-config');
 
 ```
 
@@ -28,4 +28,3 @@ const updatedConfig = Object.assign(prettierConfig, {semi: true})
 module.exports = updatedConfig
 
 ```
-

@@ -1,7 +1,7 @@
 {
-  "name": "@xt-pagesource/commitlint-config",
+  "name": "@xt-pagesource/husky-config",
   "version": "1.0.0",
-  "description": "XT PageSource (Commitlint Config) configuration",
+  "description": "XT PageSource (husky Config) configuration",
   "keywords": [
     "commitlint",
     "rules",

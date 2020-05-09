@@ -18,7 +18,10 @@
     "postInstall.js"
   ],
   "scripts": {
-    "postinstall": "postInstall.js"
+    "postinstall": "node postInstall.js"
+  },
+  "dependencies": {
+    "npm": "^6.14.5"
   },
   "peerDependencies": {
     "babel-eslint": "10.1.0",
@@ -30,6 +33,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-import": "2.20.2",
     "prettier": "^2.0.5"
   }
 }

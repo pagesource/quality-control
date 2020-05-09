@@ -17,6 +17,9 @@
     "index.js",
     "postInstall.js"
   ],
+  "scripts": {
+    "postinstall": "node postInstall.js"
+  },
   "peerDependencies": {
     "stylelint": "^13.3.3",
     "stylelint-scss": "3.17.2",

@@ -1,11 +1,11 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 const npm = require('npm');
-const colors = require('colors');
-const sourcePackage = fs.readFileSync('package.json');
-const dirPath = process.cwd();
+const dirPath = path.resolve(__dirname).split('/node_modules')[0];
 const targetFileName = `${dirPath}/package.json`;
+const sourcePackage = fs.readFileSync('package.json');
 
 /* Installing peer dependencies packages  here */
 
@@ -14,7 +14,7 @@ const installPackages = (path, depArr) => {
     try {
       npm.commands.install(path, depArr);
     } catch (e) {
-      console.error('error installing, please install manually'.red);
+      console.error('error installing, please install manually');
       throw e;
     }
   });
@@ -36,11 +36,9 @@ const getDepArray = (peerDep) => {
 /* Installing peer dependencies into user root directory */
 
 const installPeerDependencies = (peerDep) => {
-  console.info(
-    `installing ${Object.keys(peerDep).length || 0} packages`.yellow
-  );
+  console.info(`installing ${Object.keys(peerDep).length || 0} packages`);
   const depArr = getDepArray(peerDep);
-  //installPackages(dirPath, depArr);
+  installPackages(dirPath, depArr);
 };
 
 /* updating peer depedencies into user package.json */
@@ -68,11 +66,11 @@ const updateDependencies = () => {
       'utf8',
       function (err) {
         if (err) {
-          console.log('An error occured while updating dev dependencies'.red);
+          console.log('An error occured while updating dev dependencies');
           return console.log(err);
         }
 
-        console.log('dev dependencies updated.'.green);
+        console.log('dev dependencies updated.');
         installPeerDependencies(peerDeppendency);
       }
     );

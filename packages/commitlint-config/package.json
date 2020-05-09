@@ -1,0 +1,23 @@
+{
+  "name": "@xt-pagesource/commitlint-config",
+  "version": "1.0.0",
+  "description": "XT PageSource (Commitlint Config) configuration",
+  "keywords": [
+    "commitlint",
+    "rules",
+    "lint",
+    "javascript"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/pagesource/quality-control.git",
+  "author": "Sapient XT",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "husky": "^3.0.9"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@xt-pagesource/stylelint-config",
+  "name": "@xt-pagesource/stylelint-config-react",
   "version": "1.0.0",
   "description": "XT PageSource (Stylint) configuration",
   "keywords": [
@@ -14,7 +14,8 @@
   "author": "Sapient XT",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "postInstall.js"
   ],
   "peerDependencies": {
     "stylelint": "^13.3.3",

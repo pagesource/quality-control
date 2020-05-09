@@ -1,5 +1,5 @@
 {
-  "name": "@xt-pagesource/eslint-config",
+  "name": "@xt-pagesource/eslint-config-react",
   "version": "1.0.0",
   "description": "XT PageSource (ESLint) configuration",
   "keywords": [
@@ -14,8 +14,12 @@
   "author": "Sapient XT",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "postInstall.js"
   ],
+  "scripts": {
+    "postinstall": "postInstall.js"
+  },
   "peerDependencies": {
     "babel-eslint": "10.1.0",
     "eslint": "^6.8.0",
@@ -28,6 +32,21 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-compat": "^3.3.0",
     "eslint-plugin-extra-rules": "0.0.0-development",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-extra-rules": "0.0.0-development",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.4",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "prettier": "^2.0.5"
   }

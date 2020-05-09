@@ -5,7 +5,7 @@
 #### To Install package .
 
 ```
-npm install @xt-pagesource/eslint-config
+npm install @xt-pagesource/eslint-config-react
 
 ```
 
@@ -16,7 +16,7 @@ npm install @xt-pagesource/eslint-config
 ```
 {
 
- "extends":["@xt-pagesource/eslint-config"]
+ "extends":["@xt-pagesource/eslint-config-react"]
 
 }
 
@@ -27,7 +27,7 @@ npm install @xt-pagesource/eslint-config
 ```
 {
 
- "extends":["@xt-pagesource/eslint-config"],
+ "extends":["@xt-pagesource/eslint-config-react"],
 
  rules:{
      your rules here
@@ -62,7 +62,6 @@ Add in your package.json at the scripts section the two following scripts:
     "scripts": {
     "lint:js": "eslint path/to/folder",
     "lint:fix": "eslint  --fix path/to/folder"
-    "lint:css": "stylelint path/to/folder",
     }
 }
 

@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const npm = require('npm');
 const dirPath = path.resolve(__dirname).split('/node_modules')[0];
+const eslintfile = `${dirPath}/.eslintrc.js`
 const targetFileName = `${dirPath}/package.json`;
 const sourcePackage = fs.readFileSync('package.json');
 
@@ -19,6 +20,10 @@ const installPackages = (path, depArr) => {
     }
   });
 };
+
+function cretaeLintFile() {
+  fs.copyFileSync(`${dirPath}/node_modules/@xt-pagesource/eslint-config-react/index.js`, `${dirPath}/.eslintrc.js`);
+}
 
 /* creating peer dependencies array from peer dependencies object */
 
@@ -78,3 +83,4 @@ const updateDependencies = () => {
 };
 
 updateDependencies();
+cretaeLintFile();

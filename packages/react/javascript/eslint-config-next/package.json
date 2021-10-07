@@ -1,0 +1,36 @@
+{
+  "name": "@xt-pagesource/eslint-config-next",
+  "version": "0.0.0-developement",
+  "description": "XT PageSource (ESLint) configuration",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "rules",
+    "lint",
+    "next"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/pagesource/quality-control.git",
+  "author": "Sapient XT",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "postInstall.js"
+  ],
+  "scripts": {
+    "postinstall": "node postInstall.js"
+  },
+  "dependencies": {
+    "npm": "^6.14.5"
+  },
+  "peerDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-config-next": "^11.1.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^2.0.5"
+  }
+}

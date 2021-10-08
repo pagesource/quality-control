@@ -1,0 +1,50 @@
+{
+  "name": "@xt-pagesource/commitlint-config-react",
+  "version": "1.0.0",
+  "description": "XT PageSource (Commitlint) configuration",
+  "keywords": [
+    "commitlint",
+    "pre-commit",
+    "rules",
+    "lint",
+    "javascript",
+    "commit-message"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/pagesource/quality-control.git",
+  "author": "Sapient XT",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "postInstall.js"
+  ],
+  "scripts": {
+    "postinstall": "node postInstall.js"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "npm": "^6.14.5"
+  },
+  "peerDependencies": {
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/cli": "^13.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-lerna-changelog": "^2.0.3",
+    "husky": "^4.3.8"
+  }
+}

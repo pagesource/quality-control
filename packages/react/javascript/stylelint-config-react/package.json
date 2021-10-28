@@ -1,0 +1,33 @@
+{
+  "name": "@xt-pagesource/stylelint-config-react",
+  "version": "1.0.0",
+  "description": "XT PageSource (Stylint) configuration",
+  "keywords": [
+    "stylelint",
+    "prettier",
+    "rules",
+    "lint",
+    "SCSS"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/pagesource/quality-control.git",
+  "author": "Sapient XT",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "postInstall.js"
+  ],
+  "scripts": {
+    "postinstall": "node postInstall.js"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-scss": "3.17.2",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-formatter-pretty": "^2.0.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  }
+}

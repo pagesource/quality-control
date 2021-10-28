@@ -1,0 +1,50 @@
+{
+  "name": "@xt-pagesource/eslint-config-react",
+  "version": "1.0.0",
+  "description": "XT PageSource (ESLint) configuration",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "rules",
+    "lint",
+    "javascript"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/pagesource/quality-control.git",
+  "author": "Sapient XT",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "postInstall.js"
+  ],
+  "scripts": {
+    "postinstall": "node postInstall.js"
+  },
+  "dependencies": {
+    "npm": "^6.14.5"
+  },
+  "peerDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1"
+  }
+}
